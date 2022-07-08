@@ -1,60 +1,16 @@
 <template>
  <MyNav />
- <h1>Ninga Reaction Timer</h1>
- <button 
-    class="btn btn-outline-info"
-    @click="start"
-    :disabled="isPlaying"
-   >Play</button>
-
-   <MyBlock 
-     v-if="isPlaying"
-     :delay="delay"
-     @end="endGame"/>
-    
-    <MyResults 
-      v-if="showResults"
-      :score="score"
-    />
-
-     <!--<p v-if="showResults">Reaction Time: {{score }} ms</p>-->
-
 </template>
 
 <script>
-
-import MyBlock from './components/MyBlock.vue';
-import MyResults from './components/MyResults.vue';
 import MyNav from './components/nav/MyNav.vue';
 
 export default {
   name: 'App',
   components: {
-    MyBlock,
-    MyResults,
     MyNav
   },
-  data() {
-    return {
-       isPlaying: false,
-       delay:null,
-       score:null,
-       showResults: false
-    }
-  },
-  methods: {
-    start(){
-      this.delay = 2000 + Math.random() * 5000
-      //the component will 'mount' when it becomes visible in the DOM
-      this.isPlaying = true;
-      this.showResults = false;
-    },
-    endGame(reactionTime){
-      this.score = reactionTime;
-      this.isPlaying = false;
-      this.showResults = true;
-    }
-  }
+  
 }
 </script>
 
@@ -79,9 +35,10 @@ export default {
   cursor: pointer;
   margin:10px;
  }
- */
+ 
  button[disabled] {
     opacity: 0.2;
     cursor: not-allowed
  }
+ */
 </style>
