@@ -1,6 +1,8 @@
 <template>
+ <MyNav />
  <h1>Ninga Reaction Timer</h1>
  <button 
+    class="btn btn-outline-info"
     @click="start"
     :disabled="isPlaying"
    >Play</button>
@@ -23,12 +25,14 @@
 
 import MyBlock from './components/MyBlock.vue';
 import MyResults from './components/MyResults.vue';
+import MyNav from './components/nav/MyNav.vue';
 
 export default {
   name: 'App',
   components: {
     MyBlock,
-    MyResults
+    MyResults,
+    MyNav
   },
   data() {
     return {
@@ -63,6 +67,7 @@ export default {
   color: #444;
   margin-top: 60px;
 }
+/*
  button {
   background: #0faf87;
   color:white;
@@ -74,6 +79,7 @@ export default {
   cursor: pointer;
   margin:10px;
  }
+ */
  button[disabled] {
     opacity: 0.2;
     cursor: not-allowed
