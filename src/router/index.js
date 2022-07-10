@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router';
 import HelloWorld from '../components/HelloWorld.vue';
 import MyGame from '../components/MyGame.vue';
 import ReduxVue from '../components/ReduxVue.vue';
+import FooUnit from '../components/FooUnit.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/MyGame',
     name: 'MyGame',
     component: MyGame,
+  },
+  {
+    path: '/FooUnit',
+    name: 'FooUnit',
+    component: FooUnit,
   },
 ];
 
