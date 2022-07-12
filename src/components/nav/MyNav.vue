@@ -21,6 +21,9 @@
             <li class="nav-item">
               <router-link to="/HelloWorld" class="nav-link">HelloWorld</router-link>
             </li>
+              <li class="nav-item">
+              <router-link to="/DetailForm" class="nav-link">Detail Form</router-link>
+            </li>
              <li class="nav-item">
               <router-link to="/FooUnit" class="nav-link">Foo Unit Test</router-link>
             </li>
