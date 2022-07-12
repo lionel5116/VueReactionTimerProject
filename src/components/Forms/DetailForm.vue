@@ -42,14 +42,31 @@
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="button" 
+            class="btn btn-warning"
+            @click="playaGame">Play a game</button>
   </div>
 </form>
   </div>
 </template>
 
 <script>
+
 export default {
-  name:'DetailForm'
+  name:'DetailForm',
+  components: {
+
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    playaGame(){
+      this.$router.push({path:'/MyGame'})
+    }
+  }
 }
 </script >
   
