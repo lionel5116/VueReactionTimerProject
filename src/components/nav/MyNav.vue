@@ -27,6 +27,9 @@
              <li class="nav-item">
               <router-link to="/FooUnit" class="nav-link">Foo Unit Test</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/BSTableTester" class="nav-link">Bootstrap Table Tester</router-link>
+            </li>
           </ul>
         </div>
       </div>

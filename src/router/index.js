@@ -4,6 +4,7 @@ import MyGame from '../components/MyGame.vue';
 import ReduxVue from '../components/ReduxVue.vue';
 import FooUnit from '../components/FooUnit.vue';
 import DetailForm from '../components/Forms/DetailForm.vue';
+import BSTableTester from '../components/BSTableTester.vue';
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/DetailForm',
     name: 'DetailForm',
     component: DetailForm,
+  },
+  {
+    path: '/BSTableTester',
+    name: 'BSTableTester',
+    component: BSTableTester,
   },
 ];
 
