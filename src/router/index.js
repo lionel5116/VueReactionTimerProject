@@ -5,6 +5,7 @@ import ReduxVue from '../components/ReduxVue.vue';
 import FooUnit from '../components/FooUnit.vue';
 import DetailForm from '../components/Forms/DetailForm.vue';
 import BSTableTester from '../components/BSTableTester.vue';
+import HuckeClient from '../components/Forms/HuckeClient.vue';
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/BSTableTester',
     name: 'BSTableTester',
     component: BSTableTester,
+  },
+  {
+    path: '/HuckeClient',
+    name: 'HuckeClient',
+    component: HuckeClient,
   },
 ];
 

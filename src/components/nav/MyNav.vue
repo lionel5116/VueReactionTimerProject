@@ -30,6 +30,9 @@
             <li class="nav-item">
               <router-link to="/BSTableTester" class="nav-link">Bootstrap Table Tester</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/HuckeClient" class="nav-link">Hucke Client Form</router-link>
+            </li>
           </ul>
         </div>
       </div>
