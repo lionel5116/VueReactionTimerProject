@@ -142,9 +142,7 @@ export default {
 
       console.log(newClientRecord);
 
-      
       let serviceUrl = "http://localhost:5000/api/clients/createClientRecord";
-      
       
       try {
         const config = {
