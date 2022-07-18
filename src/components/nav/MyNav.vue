@@ -21,18 +21,26 @@
             <li class="nav-item">
               <router-link to="/HelloWorld" class="nav-link">HelloWorld</router-link>
             </li>
-              <li class="nav-item">
-              <router-link to="/DetailForm" class="nav-link">Detail Form</router-link>
-            </li>
+            
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Forms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <router-link to="/DetailForm" class="nav-link">Detail Form</router-link>
+                   <router-link to="/HuckeClient" class="nav-link">Hucke Client Form</router-link>
+                    <router-link to="/SignupForm" class="nav-link">Signup Form</router-link>
+                </ul>
+              </li>
+
+          
              <li class="nav-item">
               <router-link to="/FooUnit" class="nav-link">Foo Unit Test</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/BSTableTester" class="nav-link">Bootstrap Table Tester</router-link>
             </li>
-            <li class="nav-item">
-              <router-link to="/HuckeClient" class="nav-link">Hucke Client Form</router-link>
-            </li>
+          
           </ul>
         </div>
       </div>
