@@ -26,7 +26,7 @@ export default {
     BSTable
   },
   mounted() {
-    axios('http://localhost:62952/api/Client/FetchAllClientsForBTTable/').then(response => {
+    axios('http://localhost/HuckeWEBAPI/api/Client/FetchAllClientsForBTTable/').then(response => {
        this.clientData = response.data;
      })
 
