@@ -155,7 +155,7 @@ export default {
           .post(serviceUrl, newClientRecord, config)
           .then((response) => {
             console.log(response.data);
-            window.alert("Record Created for " +  this.FirstName)
+            window.alert("Record Created for " +  this.FirstName);
           });
       } catch (err) {
         console.log(err);
